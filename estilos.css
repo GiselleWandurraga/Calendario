@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+
+}
+
+body{
+    background-color: rgb(242, 216, 239);
+
+}
+
+.contenedor {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 40px 40px;
+    justify-content: center;
+    gap: 20px;
+
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 7px;
+    position: relative;
+    background-color: #ffffff;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5)
+}
+
+.cuerpo_card {
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin-top: 2%;
+}
+
+.cuerpo_card td {
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    overflow: hidden;
+    padding: 5px;
+    word-break: normal;
+}
+
+.cuerpo_card th {
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    overflow: hidden;
+    padding: 10px 5px;
+    word-break: normal;
+}
+
+.dias_pasados {
+    border-color: #ffffff;
+    color: #c0c0c0;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: top;
+}
+
+.dias_semanas {
+    color: rgb(231, 58, 151);
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: top;
+    
+}
+
+
+.dias_mes {
+    border-color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-align: center;
+    vertical-align: top;
+}
+
+.cuerpo_card .tg-dias_pasados {
+    border-color: #ffffff;
+    color: #000000;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: top;
+}
+
+.titulo_card {
+    background-color: rgb(233, 95, 168);
+    width: 100%;
+    padding: 17px 0 18px 40px;
+    border-radius: 7px;
+    font-weight: bold;
+}
+
+.dia {
+    color: white;
+    font-size: 50px;
+}
+
+.mes {
+    color: white;
+    font-size: 35px;
+}
+
+.icono {
+    position: absolute;
+    top: 120px;
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    color: rgb(212, 201, 201);
+    font-size: 28px;
+    transform: scaleX(1.5);
+}
+.festivos{
+    color: rgb(231, 58, 151);
+    font-weight: bold;
+    text-align: center;
+    vertical-align: top;
+    border-color: #ffffff;
+}
+
+
+@media(max-width:1365px) {
+
+    .contenedor{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media(max-width:1033px) {
+
+    .contenedor{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+    }
+    .cards{
+        margin: 0px 20px;
+    }
+    .icono {
+        top: 120px;
+    }
+}
+
+@media(max-width:728px) {
+
+    .contenedor{
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+    }
+    .cards{
+        margin: 0 100px;
+
+    }
+
+    }
+
+    
